@@ -28,13 +28,21 @@ public class Main {
         } else {
             boolean isFound = false;
             for (Animal animal : animals) {
-                if (animal.getName().equalsIgnoreCase(animalToFeed)) {
-                    JOptionPane.showMessageDialog(null, animal.calculateFood() +
+                if (animal.getName().equalsIgnoreCase(animalToFeed.trim())) {
+                    
+                    //Polymorphism
+                    JOptionPane.showMessageDialog(null, animal.calculateFood() + " " +
+                                    //Enums
+                                    animal.getFoodType()
+                            /*
                             switch (animal.getFoodType()) {
-                                case CATFOOD -> " kattfoder.";
-                                case DOGFOOD -> " hundfoder.";
-                                case SNAKEPELLETS -> " ormpellets.";
-                            });
+                                //Enums
+                                case CAT_FOOD -> " kattfoder.";
+                                case DOG_FOOD -> " hundfoder.";
+                                case SNAKE_PELLETS -> " ormpellets.";
+                            }
+                            */
+                    );
                     isFound = true;
                     break;
                 }
@@ -47,13 +55,12 @@ public class Main {
                 if (animal.getName().equals(animalToFeed)) {
                     JOptionPane.showMessageDialog(null, animal.calculateFood());
                     System.out.println("Found!");
-                    //break;
+                    break;
                     return;
                 } else {
                     System.out.println("continued!");
                 }
-            });
-            */
+            });*/
         }
     }
 }
