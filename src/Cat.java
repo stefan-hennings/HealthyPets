@@ -1,6 +1,6 @@
 public class Cat extends Animal {
     public Cat(String name, int weight) {
-        super(name, weight, Enums.CATFOOD);
+        super(name, weight, Enums.CAT_FOOD);
     }
     
     @Override

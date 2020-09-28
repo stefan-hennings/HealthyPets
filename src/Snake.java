@@ -1,6 +1,6 @@
 public class Snake extends Animal {
     public Snake(String name, int weight) {
-        super(name, weight, Enums.SNAKEPELLETS);
+        super(name, weight, Enums.SNAKE_PELLETS);
     }
     
     @Override

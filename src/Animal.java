@@ -4,7 +4,7 @@ public abstract class Animal {
     private final Enums foodType;
     
     public Animal(String name, int weight, Enums foodType) {
-        this.name = name;
+        this.name = name.trim();
         this.weight = weight;
         this.foodType = foodType;
     }
