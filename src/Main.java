@@ -29,10 +29,9 @@ public class Main {
             boolean isFound = false;
             for (Animal animal : animals) {
                 if (animal.getName().equalsIgnoreCase(animalToFeed.trim())) {
-                    
                     //Polymorphism
                     JOptionPane.showMessageDialog(null, animal.calculateFood() + " " +
-                                    //Enums
+                                    //Enums and polymorphism
                                     animal.getFoodType()
                             /*
                             switch (animal.getFoodType()) {
