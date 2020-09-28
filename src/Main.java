@@ -31,7 +31,7 @@ public class Main {
                 if (animal.getName().equalsIgnoreCase(animalToFeed.trim())) {
                     //Polymorphism
                     JOptionPane.showMessageDialog(null, animal.calculateFood() + " " +
-                                    //Enums and polymorphism
+                                    //Enums and more polymorphism
                                     animal.getFoodType()
                             /*
                             switch (animal.getFoodType()) {
