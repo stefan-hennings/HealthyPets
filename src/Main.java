@@ -54,12 +54,14 @@ public class Main {
                 if (animal.getName().equals(animalToFeed)) {
                     JOptionPane.showMessageDialog(null, animal.calculateFood());
                     System.out.println("Found!");
-                    break;
+//                    break;
                     return;
                 } else {
-                    System.out.println("continued!");
+                    System.out.println("Not found");
                 }
-            });*/
+//                break;
+            });
+            */
         }
     }
 }
