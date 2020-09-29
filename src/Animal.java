@@ -1,4 +1,5 @@
 public abstract class Animal {
+    //Inkapsling
     private final String name;
     private final int weight;
     private final Enums foodType;
