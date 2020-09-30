@@ -1,4 +1,4 @@
-public abstract class Animal {
+public abstract class Animal implements IAnimalMould {
     //Inkapsling
     private final String name;
     private final int weight;

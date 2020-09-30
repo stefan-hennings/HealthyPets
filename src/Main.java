@@ -49,19 +49,20 @@ public class Main {
             if (!isFound) {
                 JOptionPane.showMessageDialog(null, animalToFeed + " bor inte på hotellet. ");
             }
-            /*
-            animals.forEach(animal -> {
-                if (animal.getName().equals(animalToFeed)) {
+
+/*            animals.forEach(animal -> {
+                if (animal.getName().equalsIgnoreCase(animalToFeed)) {
                     JOptionPane.showMessageDialog(null, animal.calculateFood());
                     System.out.println("Found!");
 //                    break;
-                    return;
+//                    return;
+//                    continue;
                 } else {
                     System.out.println("Not found");
                 }
 //                break;
-            });
-            */
+            });*/
+            
         }
     }
 }
